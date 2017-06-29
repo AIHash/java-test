@@ -1,4 +1,4 @@
-package com.xuqian.game.netty;
+package com.xuqian.game.netty.client;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

@@ -1,4 +1,4 @@
-package com.xuqian.game.netty;
+package com.xuqian.game.netty.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
@@ -36,12 +36,16 @@ public class TcpClient {
 	}
 
 	public static void main(String[] args) {
-		TcpClient client = new TcpClient();  
-        try {
-			client.connect("127.0.0.1", 8000);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
+		
+//		for (int i =0; i <60000; i++) {
+			TcpClient client = new TcpClient();  
+	        try {
+				client.connect("127.0.0.1", 8000);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} 
+//		}
+
 	}
 }
