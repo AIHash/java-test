@@ -29,7 +29,7 @@ public class TcpClient {
 	            ChannelFuture f = b.connect(host, port).sync();  
 	  
 	            // Wait until the connection is closed.  
-	            f.channel().closeFuture().sync();  
+	            f.channel().closeFuture().sync();
 	    } finally {  
 //	           workerGroup.shutdownGracefully();
 	    }
@@ -40,9 +40,8 @@ public class TcpClient {
 //		for (int i =0; i <60000; i++) {
 			TcpClient client = new TcpClient();  
 	        try {
-				client.connect("127.0.0.1", 8000);
+				client.connect("192.168.1.253", 6000);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} 
 //		}
