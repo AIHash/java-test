@@ -1,0 +1,20 @@
+package com.xuqian.game.expression.impl;
+
+
+/**
+ * 取模操作。
+ */
+public class ModExpression extends BinaryOperationExpression {
+
+    private static final long serialVersionUID = 128643126283846133L;
+
+    public long getValue(long key) {
+        return left.getValue(key) % right.getValue(key);
+    }
+
+    @Override
+    public int getPriority() {
+        return 2;
+    }
+
+}
