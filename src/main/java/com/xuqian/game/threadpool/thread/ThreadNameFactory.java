@@ -1,5 +1,6 @@
 package com.xuqian.game.threadpool.thread;
 
+import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -7,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author Xuqian
  *
  */
-public class ThreadNameFactory {
+public class ThreadNameFactory implements ThreadFactory {
 	private ThreadGroup group;
 	private AtomicInteger threadNumber = new AtomicInteger(0);
 	private String namePrefix;

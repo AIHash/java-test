@@ -11,7 +11,7 @@ public enum RejectedPolicyType {
 	/* 丢弃*/
 	ABORT_POLICY("AbortPolicy"),
 	/* 堵塞*/
-	BLCOKING_POLICY("BlockingPolicy"),
+	BLOCKING_POLICY("BlockingPolicy"),
 	/* 直接运行*/
 	CALLER_RUNS_POLICY("CallerRunsPolicy"),
 	/* 抛弃老的*/

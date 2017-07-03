@@ -4,12 +4,11 @@ public abstract class AbstractWork implements Runnable {
 
 	private TasksQueue<AbstractWork> tasksQueue;
 
-	public TasksQueue<AbstractWork> getTaskQueue() {
+	public TasksQueue<AbstractWork> getTasksQueue() {
 		return tasksQueue;
 	}
 
-	public void setTaskQueue(TasksQueue<AbstractWork> tasksQueue) {
+	public void setTasksQueue(TasksQueue<AbstractWork> tasksQueue) {
 		this.tasksQueue = tasksQueue;
 	}
-	
 }
